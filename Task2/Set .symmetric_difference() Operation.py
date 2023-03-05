@@ -1,0 +1,7 @@
+n1 = int(input())
+english = set(map(int,input().split()))
+n2 = int(input())
+french = set(map(int,input().split()))
+english1 =english.union(french)
+french1 = french.intersection(english)
+print(len(english1.difference(french1)))
